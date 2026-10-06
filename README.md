@@ -56,19 +56,33 @@ rag-mercadopago-assistant/
 
 ## Executando o projeto
 
+Crie o ambiente virtual:
+
+```bash
+python -m venv .venv
+```
+
+Ative o ambiente virtual.
+
+No Windows PowerShell:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
 Instale as dependências:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Crie um arquivo `.env` na raiz:
+Crie um arquivo `.env` na raiz do projeto:
 
 ```env
 OPENAI_API_KEY=sua_chave_aqui
 ```
 
-Execute:
+Execute a aplicação:
 
 ```bash
 python src/main.py
