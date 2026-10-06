@@ -10,8 +10,12 @@ documentos = carregar_documentos()
 # 2. Criar chunks
 chunks = criar_chunks(documentos)
 
+print("Carregando base de conhecimento...")
+
 # 3. Adicionar embeddings aos chunks
 chunks = adicionar_embeddings(chunks)
+
+print("Base carregada!\n")
 
 # 4. Receber a pergunta
 pergunta = input("Digite sua pergunta: ")
